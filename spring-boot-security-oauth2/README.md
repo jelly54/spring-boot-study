@@ -64,4 +64,11 @@ AuthorizationServerSecurityConfigurer : configure(HttpSecurity http) --允许从
  返回结果 
  ![response](src/main/resources/templates/response.png)     
   
-                                     
+  
+* 查询当前账户。
+
+ ![/jwt](src/main/resources/templates/jwt.png)    
+    
+ 返回结果 
+ ![jwt-info](src/main/resources/templates/jwt-info.png)     
+                                       
