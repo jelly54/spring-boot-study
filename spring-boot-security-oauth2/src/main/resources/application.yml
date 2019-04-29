@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/study?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  redis:
+    host: localhost
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1s
+        min-idle: 0
+        max-idle: 8
+logging:
+  level:
+    org.springframework: debug
+
+jelly:
+  security:
+    oauth2:
+      storeType: jwt # 或者redis
+      jwtSigningKey: jwt-signing-key
+      clients[0]:
+        clientId: jelly
+        clientSecret: jelly
+      clients[1]:
+        clientId: bigjelly
+        clientSecret: bigjelly
+server:
+  port: 9001
