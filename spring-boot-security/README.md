@@ -1,4 +1,4 @@
-# Getting Started
+# Spring Boot Security Getting Started
 
 ### Guides
 * 运行项目中 [sql文件](./src/main/resources/db) 获取数据库
@@ -13,7 +13,7 @@
 
 * 运行项目，启动后访问 [localhost:8080/home.html](localhost:8080/home.html) 将会提示登录，此时有两个选项
 ```text
-1、在 **WebSecurityConfig** 中使用了密码加密，则只能使用  账号-密码 为 jelly-123进行登陆。
+1、在 ** WebSecurityConfig ** 中使用了密码加密，则只能使用  账号-密码 为 jelly-123进行登陆。
 2、在上述文件中未使用密码加密，则使用 账号-密码 为 admin-123进行登录
 ```  
 
